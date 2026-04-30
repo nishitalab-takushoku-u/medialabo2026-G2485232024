@@ -5,7 +5,7 @@ p {
 p.info {
 	font-size: small; 
     background-color: #dfdfdf;
-    padding: 5px;
+    
 }
 
 h1 {
@@ -16,11 +16,8 @@ h1 {
 }
 
 h2 {
-	ont-family: cursive;
-    color: #3f3faf;
-    border: solid 1px black; 
-    margin: 5px;         
-    padding: 5px;
+	font-family: cursive;
+    color: #3f3faf; 
     background: linear-gradient(to bottom, white, #ffefaf);
 }
 
@@ -36,11 +33,10 @@ div#zentai > div {
 	background-color: #ffefaf;     
     margin: 0;                     
     padding: 5px;                  
-    overflow-y: auto;
+   
+
 }
-.firefox-icon {
-    float: right;
-    width: 60px;
-    height: auto;
-    margin-left: 10px;
+
+img.sign {
+    float:right;
 }
