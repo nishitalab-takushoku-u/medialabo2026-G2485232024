@@ -1,6 +1,7 @@
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
+    
 console.log("都市名:", data.name);
     console.log("緯度:", data.coord.lat);
     console.log("経度:", data.coord.lon);
@@ -15,7 +16,14 @@ console.log("都市名:", data.name);
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
-    let result = document.querySelector("#result");
+    let result = document.createElement("div");
+
+    // id="result" を設定
+    result.id = "result";
+
+    // body の最後に追加
+    document.body.appendChild(result);
+
 
     result.insertAdjacentHTML("beforeend",
         "<p>都市名: " + data.name + "</p>");
@@ -48,41 +56,19 @@ function printDom(data) {
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
-document.addEventListener("DOMContentLoaded", function() {
-// コンソール表示
-    print(data);
-
-    // HTML表示
-    printDom(data);
-
-    // ボタン取得
-    let button = document.querySelector("#send");
-
-    if (button) {
-        button.addEventListener("click", sendRequest);
-    }
-});
 
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
-function sendRequest() {
-console.log("通信開始");
-}
+
 
 // 課題6-1: 通信が成功した時の処理は以下に記述
-function showResult(resp) {
-console.log(resp);
-}
+
 
 // 課題6-1: 通信エラーが発生した時の処理
-function showError(err) {
-    console.log(err);
-}
+
 
 // 課題6-1: 通信の最後にいつも実行する処理
-function finish() {
-    console.log('Ajax 通信が終わりました');
-}
+
 
 ////////////////////////////////////////
 // 以下はグルメのデータサンプル
