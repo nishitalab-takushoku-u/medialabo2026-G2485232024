@@ -5,35 +5,39 @@
     <meta charset="utf-8">
     <title>世界の天気</title>
     <link rel="stylesheet" href="project.css">
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
      <script src="weather.js" defer></script>
+    
+     
   </head>
   <body>
    
 	 <h1>世界の天気</h1>
      <h2>以下の地方の天気に関する情報を検索して表示します</h2>
 
-    <li>緯度:</li>
-    <li>経度</li>
-    <li>天気</li>
-    <li>最低気温</li>
-    <li>最高気温</li>
-    <li>湿度</li>
-    <li>風速</li>
-    <li>風向</li>
-    <li>都市名</li>
-    </ul>
+   
+<select id="city">
+    <option value="360630">Cairo</option>
+    <option value="524901">Moscow</option>
+    <option value="993800">Johannesburg</option>
+    <option value="1816670">Beijing</option>
+    <option value="1850147">Tokyo</option>
+    <option value="1880252">Singapore</option>
+    <option value="2147714">Sydney</option>
+    <option value="2643743">London</option>
+    <option value="2968815">Paris</option>
+    <option value="3451189">Rio de Janeiro</option>
+    <option value="5128581">New York</option>
+    <option value="5368361">Los Angeles</option>
+</select>
 
-   <!-- 検索欄 -->
-    <label for="keyword"></label>
+<id="city">
 
-    <input type="text" id="keyword">
 
-    <!-- ボタン -->
-    <button id="send">検索</button>
+<button id="send">検索</button>
 
-    <!-- 結果表示 -->
-    <div id="result"></div>
 
+<div id="result"></div>
 
 </body>
 </html>
